@@ -12,3 +12,18 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const poze = document.querySelector(`.gallery`)
+let styles = {
+  'display': 'flexbox',   
+};
+for (let property in styles) {
+    if (styles.hasOwnProperty(property)) {
+        poze.style[property] = styles[property];
+    }
+}
+images.forEach(image => {
+  poze.insertAdjacentHTML('beforeend', `<li><img src="${image.url}" alt="${image.alt}"></li>`)
+});
+
+
