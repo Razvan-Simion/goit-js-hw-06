@@ -40,3 +40,4 @@ createBtn.addEventListener('click', () => {
 });
 
 destroyBtn.addEventListener('click', destroyBoxes); 
+

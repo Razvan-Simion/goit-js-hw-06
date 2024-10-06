@@ -32,5 +32,8 @@ forms.login.addEventListener('click', (event) => {
         console.log(`Email: ${box.email}`);
         console.log(`Password: ${box.password}`);
     }
+    document.querySelector(".login-form").reset();
 });
+
+
 
